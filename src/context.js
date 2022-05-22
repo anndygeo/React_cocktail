@@ -9,8 +9,6 @@ const AppProvider = ({ children }) => {
   const [searchTerm, setSearchTerm] = useState('a');
   const [cocktails, setCocktails] = useState([]);
 
-  // console.log()
-
   const fetchDrinks = useCallback(async () => {
     setLoading(true);
     try {
